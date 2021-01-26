@@ -2,6 +2,7 @@
 
 :root {
   font-size: 15px;
+  font-family: 'Poppins', sans-serif;
   --primary-1: hsl(180, 62%, 55%);
   --primary-2: hsl(0, 78%, 62%);
   --primary-3: hsl(34, 97%, 64%);
@@ -9,7 +10,6 @@
   --neutral-1: hsl(234, 12%, 34%);
   --neutral-2: hsl(229, 6%, 66%);
   --neutral-3: hsl(0, 0%, 98%);
-  font-family: 'Poppins', sans-serif;
   --card-width: 350px;
   --card-height: 225px;
 }
@@ -23,6 +23,10 @@
 img {
   display: block;
   max-width: 100%;
+}
+
+body {
+  background-color: var(--neutral-3);
 }
 
 main {
@@ -117,6 +121,12 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
+
+  .title,
+  .subtitle { 
+  font-size: 2rem;
+  }
+
   .cards-div {
     grid-template-columns: var(--card-width) var(--card-width) var(--card-width);
     grid-template-areas: 
