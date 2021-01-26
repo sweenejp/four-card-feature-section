@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  font-size: 15px;
+  --primary-1: hsl(180, 62%, 55%);
+  --primary-2: hsl(0, 78%, 62%);
+  --primary-3: hsl(34, 97%, 64%);
+  --primary-4: hsl(212, 86%, 64%);
+  --neutral-1: hsl(234, 12%, 34%);
+  --neutral-2: hsl(229, 6%, 66%);
+  --neutral-3: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+  --card-width: 350px;
+  --card-height: 225px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  width: 82.5%;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+/* intro */
+
+.intro-div {
+  text-align: center;
+  margin: 5em auto;
+  max-width: 500px;
+}
+
+.title,
+.subtitle { 
+  font-size: 1.6rem;
+  color: var(--neutral-1);
+}
+
+.title {
+  font-weight: 200;
+}
+
+.subtitle {
+  font-weight: 600;
+  margin-bottom: .75em;
+}
+
+.about {
+  color: var(--neutral-2);
+}
+
+/* cards */
+
+.cards-div {
+  display: grid;
+  gap: 2em;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  max-width: var(--card-width);
+  padding: 2em;
+  height: var(--card-height);
+  box-shadow: 2px 5px 10px rgba(102, 102, 102, 0.25);
+  border-radius: 7px;
+  border-top: solid 4px;
+  cursor: pointer;
+  transition: transform cubic-bezier(0.18, 1.2, 0.77, 1.51) 100ms;
+}
+
+.card:hover {
+  transform: skew(2deg, 2deg);
+}
+
+.card-1 {
+  border-color: var(--primary-1);
+}
+
+.card-2 {
+  border-color: var(--primary-2);
+}
+
+.card-3 {
+  border-color: var(--primary-3);
+}
+
+.card-4 {
+  border-color: var(--primary-4);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--neutral-1)
+}
+
+.card-body {
+  font-size: .875rem;
+  color: var(--neutral-2);
+}
+
+.card-icon {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-div {
+    grid-template-columns: var(--card-width) var(--card-width) var(--card-width);
+    grid-template-areas: 
+    ". card-2 ."
+    "card-1 card-2 card-4"
+    "card-1 card-3 card-4"
+    ". card-3 .";
+  }
+
+  .card-1 {
+    grid-area: card-1;
+  }
+
+  .card-2 {
+    grid-area: card-2;
+  }
+
+  .card-3 {
+    grid-area: card-3;
+  }
+
+  .card-4 {
+    grid-area: card-4;
+  }
+
+}
