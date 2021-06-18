@@ -1,3 +1,7 @@
+This is my attempt at completing this challenge from frontendmentor.io. The original instructions are below. Feel free to fork this repository!
+
+Live site here: https://jsweeney-four-card-feature-section.netlify.app/
+
 # Frontend Mentor - Four card feature section
 
 ![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
