@@ -1,4 +1,4 @@
-This is my attempt at completing this challenge from frontendmentor.io. The original instructions are below. Feel free to fork this repository!
+This is my attempt at completing this challenge from frontendmentor.io. Feel free to fork this repository!
 
 Live site here: https://jsweeney-four-card-feature-section.netlify.app/
 
